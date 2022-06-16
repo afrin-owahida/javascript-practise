@@ -3,19 +3,14 @@ import "./App.css";
 import { useEffect } from "react";
 import Ifelse from "./practice/Ifelse";
 function App() {
-var students = [1,3,2,2,4,5,6,8,4,8];
-var uniqName = [];
-  useEffect(() => {
-    for (let i = 0; i < array.length; i++) {
-      var element = array[i];
-      index = uniqName.indexOf(element);
-      if(index == -1){
-        
-      }
-      
-    }
-
-  }, []);
+  var x = 5;
+  var y = 7;
+  // x = x + y;
+  // x = x + y;
+  // y = x-y;
+  [x, y] = [y, x];
+  console.log(x, y);
+  useEffect(() => {}, []);
   return <div></div>;
 }
 

@@ -2,21 +2,19 @@ import logo from "./logo.svg";
 import "./App.css";
 import { useEffect } from "react";
 import Ifelse from "./practice/Ifelse";
-function App() {
-var students = [1,3,2,2,4,5,6,8,4,8];
-var uniqName = [];
-  useEffect(() => {
-    for (let i = 0; i < array.length; i++) {
-      var element = array[i];
-      index = uniqName.indexOf(element);
-      if(index == -1){
-        
-      }
-      
-    }
 
+function App() {
+  var arr = [10, 2, 5, 0, 12, 3, 1];
+  let smallest = arr[0];
+  useEffect(() => {
+    for (let i = 0; i < arr.length; i++) {
+      if (smallest > arr[i]) {
+        smallest = arr[i];
+      }
+    }
   }, []);
-  return <div></div>;
+
+  return <div>{/* <Ifelse/> */}</div>;
 }
 
 export default App;
